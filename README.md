@@ -11,11 +11,12 @@ A web application for managing employee information with secure authentication a
 
 ## Prerequisites
 
-- Node.js (v14.0.0 or higher)
-- npm (v6.0.0 or higher)
+- Node.js (v16.0.0 or higher)
+- pnpm (v6.0.0 or higher)
 
 ## Tech Stack
 
+- Vite
 - React.js
 - React Router Dom
 - Other dependencies as listed in package.json
@@ -24,15 +25,14 @@ A web application for managing employee information with secure authentication a
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/Darshan-147/EmployWise.git
 cd EmployWise
 ```
 
 2. Install dependencies:
 ```bash
-npm install
+pnpm install
 ```
-
 
 ## Dependencies
 
@@ -47,20 +47,21 @@ The project requires the following main dependencies:
 
 To install all dependencies, run:
 ```bash
-npm install react react-dom react-router-dom
+pnpm add react react-dom react-router-dom
 ```
 
 ## Running the Application
 
 1. Development mode:
 ```bash
-npm start
+pnpm dev
 ```
-This will start the development server at `http://localhost:3000`
+This will start the development server at `http://localhost:5173`
 
 2. Production build:
 ```bash
-npm run build
+pnpm build
+pnpm preview
 ```
 
 ## Project Structure
@@ -72,8 +73,11 @@ EmployWise/
 │   │   ├── AuthScreen.jsx
 │   │   └── UsersTable.jsx
 │   ├── App.jsx
-│   └── index.js
+│   ├── main.jsx
+│   
 ├── public/
+├── index.html
+├── vite.config.js
 └── package.json
 ```
 
